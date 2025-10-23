@@ -28,6 +28,24 @@ Analisar dados de viagens de servidores públicos (referentes a 2024) para ident
     - `2024_Viagem.csv`
     - `2024_Passagem.csv`
 
-### 2. Estrutura de Pastas
+### 2. Execução
 
-O script espera que seus arquivos estejam organizados no Google Drive da seguinte maneira:
+1.  **Montar o Google Drive (se estiver no Colab):**
+    ```python
+    from google.colab import drive
+    drive.mount('/content/drive')
+    ```
+2.  **Definir o Ano:**
+    Certifique-se de que a variável `ano` esteja correta no início do script:
+    ```python
+    ano = 2024
+    ```
+3.  **Executar o Script:**
+    Rode todas as células do notebook.
+
+## 📊 Saídas do Projeto
+
+O script gerará dois arquivos principais na pasta `/content/drive/MyDrive/AD/output/`:
+
+1.  `tabela_2024.xlsx`: Uma planilha Excel com os dados consolidados da análise por cargo.
+2.  `figura_2024.png`: A imagem do gráfico de barras "Despesa média em viagens por cargo público (2024)".
